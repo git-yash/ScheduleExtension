@@ -11,8 +11,8 @@
 		C4D9F8282D9E466000D7C011 /* ScheduleExtension MessagesExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = C4D9F8272D9E466000D7C011 /* ScheduleExtension MessagesExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		C4D9F82D2D9E466000D7C011 /* Messages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4D9F82C2D9E466000D7C011 /* Messages.framework */; };
 		C4D9F8302D9E466000D7C011 /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D9F82F2D9E466000D7C011 /* MessagesViewController.swift */; };
-		C4D9F8332D9E466000D7C011 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4D9F8312D9E466000D7C011 /* MainInterface.storyboard */; };
 		C4D9F8352D9E466100D7C011 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4D9F8342D9E466100D7C011 /* Assets.xcassets */; };
+		C4EFA28A2D9E4E86005C3BFB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EFA2892D9E4E86005C3BFB /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,9 +45,9 @@
 		C4D9F8272D9E466000D7C011 /* ScheduleExtension MessagesExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "ScheduleExtension MessagesExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4D9F82C2D9E466000D7C011 /* Messages.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Messages.framework; path = System/Library/Frameworks/Messages.framework; sourceTree = SDKROOT; };
 		C4D9F82F2D9E466000D7C011 /* MessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
-		C4D9F8322D9E466000D7C011 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		C4D9F8342D9E466100D7C011 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C4D9F8362D9E466100D7C011 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4EFA2892D9E4E86005C3BFB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,9 +101,9 @@
 			isa = PBXGroup;
 			children = (
 				C4D9F82F2D9E466000D7C011 /* MessagesViewController.swift */,
-				C4D9F8312D9E466000D7C011 /* MainInterface.storyboard */,
 				C4D9F8342D9E466100D7C011 /* Assets.xcassets */,
 				C4D9F8362D9E466100D7C011 /* Info.plist */,
+				C4EFA2892D9E4E86005C3BFB /* ContentView.swift */,
 			);
 			path = "ScheduleExtension MessagesExtension";
 			sourceTree = "<group>";
@@ -196,7 +196,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				C4D9F8352D9E466100D7C011 /* Assets.xcassets in Resources */,
-				C4D9F8332D9E466000D7C011 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,6 +206,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4EFA28A2D9E4E86005C3BFB /* ContentView.swift in Sources */,
 				C4D9F8302D9E466000D7C011 /* MessagesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -220,17 +220,6 @@
 			targetProxy = C4D9F8292D9E466000D7C011 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		C4D9F8312D9E466000D7C011 /* MainInterface.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C4D9F8322D9E466000D7C011 /* Base */,
-			);
-			name = MainInterface.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		C4D9F8372D9E466100D7C011 /* Debug */ = {

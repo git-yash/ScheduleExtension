@@ -7,12 +7,23 @@
 
 import UIKit
 import Messages
+import SwiftUI
 
 class MessagesViewController: MSMessagesAppViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        let child = UIHostingController(rootView: ContentView())
+        child.view.translatesAutoresizingMaskIntoConstraints = false
+        self.view.addSubview(child.view)
+        
+        NSLayoutConstraint.activate([
+            child.view.topAnchor.constraint(equalTo: view.topAnchor, constant: 0.0),
+            child.view.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 0.0),
+            child.view.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 0.0),
+            child.view.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: 0.0)
+            ])
     }
     
     // MARK: - Conversation Handling
